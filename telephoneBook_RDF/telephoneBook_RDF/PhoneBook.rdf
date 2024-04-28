@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	<!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+	<!ENTITY xsd 'http://www.w3.org/2001/XMLSchema#'>
+	<!ENTITY owl 'http://www.w3.org/2002/07/owl#'>
+	<!ENTITY exv 'http://example.org/vocabulary/'>
+	<!ENTITY exi 'http://example.org/instances/'>
+]>
+<rdf:RDF xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:exv="http://example.org/vocabulary/" xmlns:exi="http://example.org/instances/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <exv:PhoneBookEntry rdf:about="&exi;person0">
+    <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
+    <exv:email rdf:datatype="&xsd;string">ernst.haft@gmail.at</exv:email>
+    <exv:firstName rdf:datatype="&xsd;string">Ernst</exv:firstName>
+    <exv:lastName rdf:datatype="&xsd;string">Haft</exv:lastName>
+    <exv:phoneNo rdf:datatype="&xsd;string">+43 664 134684</exv:phoneNo>
+    <exv:postalCode rdf:datatype="&xsd;integer">4040</exv:postalCode>
+    <exv:represents rdf:resource="&exv;Person" />
+    <exv:street rdf:datatype="&xsd;string">Mengerstraße</exv:street>
+    <exv:streetNo rdf:datatype="&xsd;integer">8</exv:streetNo>
+  </exv:PhoneBookEntry>
+  <exv:PhoneBookEntry rdf:about="&exi;person1">
+    <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
+    <exv:email rdf:datatype="&xsd;string">hella.wahnsinn@gmail.at</exv:email>
+    <exv:firstName rdf:datatype="&xsd;string">Hella</exv:firstName>
+    <exv:lastName rdf:datatype="&xsd;string">Wahnsinn</exv:lastName>
+    <exv:phoneNo rdf:datatype="&xsd;string">+43 664 1283371</exv:phoneNo>
+    <exv:postalCode rdf:datatype="&xsd;integer">5140</exv:postalCode>
+    <exv:represents rdf:resource="&exv;Person" />
+    <exv:street rdf:datatype="&xsd;string">Rheinstraße</exv:street>
+    <exv:streetNo rdf:datatype="&xsd;integer">44</exv:streetNo>
+  </exv:PhoneBookEntry>
+  <exv:PhoneBookEntry rdf:about="&exi;person10">
+    <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
+    <exv:email rdf:datatype="&xsd;string">don.key@gmail.at</exv:email>
+    <exv:firstName rdf:datatype="&xsd;string">Don</exv:firstName>
+    <exv:lastName rdf:datatype="&xsd;string">Key</exv:lastName>
+    <exv:phoneNo rdf:datatype="&xsd;string">+43 664 632121</exv:phoneNo>
+    <exv:postalCode rdf:datatype="&xsd;integer">7000</exv:postalCode>
+    <exv:represents rdf:resource="&exv;Person" />
+    <exv:street rdf:datatype="&xsd;string">Burgstallgasse</exv:street>
+    <exv:streetNo rdf:datatype="&xsd;integer">88</exv:streetNo>
+  </exv:PhoneBookEntry>
+  <exv:PhoneBookEntry rdf:about="&exi;person11">
+    <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
+    <exv:email rdf:datatype="&xsd;string">earllee.riser@gmail.at</exv:email>
+    <exv:firstName rdf:datatype="&xsd;string">Earl Lee</exv:firstName>
+    <exv:lastName rdf:datatype="&xsd;string">Riser</exv:lastName>
+    <exv:phoneNo rdf:datatype="&xsd;string">+43 664 897124</exv:phoneNo>
+    <exv:postalCode rdf:datatype="&xsd;integer">9872</exv:postalCode>
+    <exv:represents rdf:resource="&exv;Person" />
+    <exv:street rdf:datatype="&xsd;string">Sandgrube</exv:street>
+    <exv:streetNo rdf:datatype="&xsd;integer">13</exv:streetNo>
+  </exv:PhoneBookEntry>
+  <exv:PhoneBookEntry rdf:about="&exi;person12">
+    <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
+    <exv:email rdf:datatype="&xsd;string">jack.pot@gmail.at</exv:email>
+    <exv:firstName rdf:datatype="&xsd;string">Jack</exv:firstName>
+    <exv:lastName rdf:datatype="&xsd;string">Pott</exv:lastName>
+    <exv:phoneNo rdf:datatype="&xsd;string">+43 660 112354</exv:phoneNo>
+    <exv:postalCode rdf:datatype="&xsd;integer">8523</exv:postalCode>
+    <exv:represents rdf:resource="&exv;Person" />
+    <exv:street rdf:datatype="&xsd;string">Bozener Gasse</exv:street>
+    <exv:streetNo rdf:datatype="&xsd;integer">101</exv:streetNo>
+  </exv:PhoneBookEntry>
+  <exv:PhoneBookEntry rdf:about="&exi;person13">
+    <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
+    <exv:email rdf:datatype="&xsd;string">lucy.fer@gmail.at</exv:email>
+    <exv:firstName rdf:datatype="&xsd;string">Lucy</exv:firstName>
+    <exv:lastName rdf:datatype="&xsd;string">Fer</exv:lastName>
+    <exv:phoneNo rdf:datatype="&xsd;string">+43 660 238412</exv:phoneNo>
+    <exv:postalCode rdf:datatype="&xsd;integer">1170</exv:postalCode>
+    <exv:represents rdf:resource="&exv;Person" />
+    <exv:street rdf:datatype="&xsd;string">Buchenweg</exv:street>
+    <exv:streetNo rdf:datatype="&xsd;integer">122</exv:streetNo>
+  </exv:PhoneBookEntry>
+  <exv:PhoneBookEntry rdf:about="&exi;person14">
+    <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
+    <exv:email rdf:datatype="&xsd;string">fiona.schreck@gmail.at</exv:email>
+    <exv:firstName rdf:datatype="&xsd;string">Fiona</exv:firstName>
+    <exv:lastName rdf:datatype="&xsd;string">Schreck</exv:lastName>
+    <exv:phoneNo rdf:datatype="&xsd;string">+43 660 267951</exv:phoneNo>
+    <exv:postalCode rdf:datatype="&xsd;integer">3324</exv:postalCode>
+    <exv:represents rdf:resource="&exv;Person" />
+    <exv:street rdf:datatype="&xsd;string">Buchenweg</exv:street>
+    <exv:streetNo rdf:datatype="&xsd;integer">16</exv:streetNo>
+  </exv:PhoneBookEntry>
+  <exv:PhoneBookEntry rdf:about="&exi;person15">
+    <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
+    <exv:email rdf:datatype="&xsd;string">al.dente@outlook.at</exv:email>
+    <exv:firstName rdf:datatype="&xsd;string">Al</exv:firstName>
+    <exv:lastName rdf:datatype="&xsd;string">Dente</exv:lastName>
+    <exv:phoneNo rdf:datatype="&xsd;string">+43 660 197252</exv:phoneNo>
+    <exv:postalCode rdf:datatype="&xsd;integer">2210</exv:postalCode>
+    <exv:represents rdf:resource="&exv;Person" />
+    <exv:street rdf:datatype="&xsd;string">Am Waldrand</exv:street>
+    <exv:streetNo rdf:datatype="&xsd;integer">77</exv:streetNo>
+  </exv:PhoneBookEntry>
+  <exv:PhoneBookEntry rdf:about="&exi;person16">
+    <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
+    <exv:email rdf:datatype="&xsd;string">anna.mixmax@gmail.at</exv:email>
+    <exv:firstName rdf:datatype="&xsd;string">Anna</exv:firstName>
+    <exv:lastName rdf:datatype="&xsd;string">MixMax</exv:lastName>
+    <exv:phoneNo rdf:datatype="&xsd;string">+43 660 199672</exv:phoneNo>
+    <exv:postalCode rdf:datatype="&xsd;integer">3390</exv:postalCode>
+    <exv:represents rdf:resource="&exv;Person" />
+    <exv:street rdf:datatype="&xsd;string">Am Waldweg</exv:street>
+    <exv:streetNo rdf:datatype="&xsd;integer">65</exv:streetNo>
+  </exv:PhoneBookEntry>
+  <exv:PhoneBookEntry rdf:about="&exi;person17">
+    <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
+    <exv:email rdf:datatype="&xsd;string">marina.mixmax@gmail.at</exv:email>
+    <exv:firstName rdf:datatype="&xsd;string">Marina</exv:firstName>
+    <exv:lastName rdf:datatype="&xsd;string">MixMax</exv:lastName>
+    <exv:phoneNo rdf:datatype="&xsd;string">+43 660 389314</exv:phoneNo>
+    <exv:postalCode rdf:datatype="&xsd;integer">3390</exv:postalCode>
+    <exv:represents rdf:resource="&exv;Person" />
+    <exv:street rdf:datatype="&xsd;string">Unter der Eiche</exv:street>
+    <exv:streetNo rdf:datatype="&xsd;integer">5</exv:streetNo>
+  </exv:PhoneBookEntry>
+  <exv:PhoneBookEntry rdf:about="&exi;person2">
+    <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
+    <exv:email rdf:datatype="&xsd;string">earle.bird@gmail.at</exv:email>
+    <exv:firstName rdf:datatype="&xsd;string">Earl E.</exv:firstName>
+    <exv:lastName rdf:datatype="&xsd;string">Bird</exv:lastName>
+    <exv:phoneNo rdf:datatype="&xsd;string">+43 660 3123206</exv:phoneNo>
+    <exv:postalCode rdf:datatype="&xsd;integer">5071</exv:postalCode>
+    <exv:represents rdf:resource="&exv;Person" />
+    <exv:street rdf:datatype="&xsd;string">Bankgasse</exv:street>
+    <exv:streetNo rdf:datatype="&xsd;integer">65</exv:streetNo>
+  </exv:PhoneBookEntry>
+  <exv:PhoneBookEntry rdf:about="&exi;person3">
+    <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
+    <exv:email rdf:datatype="&xsd;string">al.dente@gmail.at</exv:email>
+    <exv:firstName rdf:datatype="&xsd;string">Al</exv:firstName>
+    <exv:lastName rdf:datatype="&xsd;string">Dente</exv:lastName>
+    <exv:phoneNo rdf:datatype="&xsd;string">+43 660 956314</exv:phoneNo>
+    <exv:postalCode rdf:datatype="&xsd;integer">1010</exv:postalCode>
+    <exv:represents rdf:resource="&exv;Person" />
+    <exv:street rdf:datatype="&xsd;string">Alxingergasse</exv:street>
+    <exv:streetNo rdf:datatype="&xsd;integer">182</exv:streetNo>
+  </exv:PhoneBookEntry>
+  <exv:PhoneBookEntry rdf:about="&exi;person4">
+    <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
+    <exv:email rdf:datatype="&xsd;string">anna.conda@gmail.at</exv:email>
+    <exv:firstName rdf:datatype="&xsd;string">Anna</exv:firstName>
+    <exv:lastName rdf:datatype="&xsd;string">Conda</exv:lastName>
+    <exv:phoneNo rdf:datatype="&xsd;string">+43 660 751265</exv:phoneNo>
+    <exv:postalCode rdf:datatype="&xsd;integer">2002</exv:postalCode>
+    <exv:represents rdf:resource="&exv;Person" />
+    <exv:street rdf:datatype="&xsd;string">Grabengassl</exv:street>
+    <exv:streetNo rdf:datatype="&xsd;integer">178</exv:streetNo>
+  </exv:PhoneBookEntry>
+  <exv:PhoneBookEntry rdf:about="&exi;person5">
+    <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
+    <exv:email rdf:datatype="&xsd;string">anna.conda35@gmail.at</exv:email>
+    <exv:firstName rdf:datatype="&xsd;string">Anna</exv:firstName>
+    <exv:lastName rdf:datatype="&xsd;string">Conda</exv:lastName>
+    <exv:phoneNo rdf:datatype="&xsd;string">+43 660 751236</exv:phoneNo>
+    <exv:postalCode rdf:datatype="&xsd;integer">2002</exv:postalCode>
+    <exv:represents rdf:resource="&exv;Person" />
+    <exv:street rdf:datatype="&xsd;string">Grabengassl</exv:street>
+    <exv:streetNo rdf:datatype="&xsd;integer">66</exv:streetNo>
+  </exv:PhoneBookEntry>
+  <exv:PhoneBookEntry rdf:about="&exi;person6">
+    <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
+    <exv:email rdf:datatype="&xsd;string">al.bino@gmail.at</exv:email>
+    <exv:firstName rdf:datatype="&xsd;string">Al</exv:firstName>
+    <exv:lastName rdf:datatype="&xsd;string">Bino</exv:lastName>
+    <exv:phoneNo rdf:datatype="&xsd;string">+43 664 798852</exv:phoneNo>
+    <exv:postalCode rdf:datatype="&xsd;integer">2135</exv:postalCode>
+    <exv:represents rdf:resource="&exv;Person" />
+    <exv:street rdf:datatype="&xsd;string">Gartengasse</exv:street>
+    <exv:streetNo rdf:datatype="&xsd;integer">12</exv:streetNo>
+  </exv:PhoneBookEntry>
+  <exv:PhoneBookEntry rdf:about="&exi;person7">
+    <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
+    <exv:email rdf:datatype="&xsd;string">bill.ding@gmail.at</exv:email>
+    <exv:firstName rdf:datatype="&xsd;string">Bill</exv:firstName>
+    <exv:lastName rdf:datatype="&xsd;string">Ding</exv:lastName>
+    <exv:phoneNo rdf:datatype="&xsd;string">+43 664 123456</exv:phoneNo>
+    <exv:postalCode rdf:datatype="&xsd;integer">3353</exv:postalCode>
+    <exv:represents rdf:resource="&exv;Person" />
+    <exv:street rdf:datatype="&xsd;string">Trefflinggasse</exv:street>
+    <exv:streetNo rdf:datatype="&xsd;integer">83</exv:streetNo>
+  </exv:PhoneBookEntry>
+  <exv:PhoneBookEntry rdf:about="&exi;person8">
+    <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
+    <exv:email rdf:datatype="&xsd;string">cara.vab@gmail.at</exv:email>
+    <exv:firstName rdf:datatype="&xsd;string">Cara</exv:firstName>
+    <exv:lastName rdf:datatype="&xsd;string">Van</exv:lastName>
+    <exv:phoneNo rdf:datatype="&xsd;string">+43 664 789523</exv:phoneNo>
+    <exv:postalCode rdf:datatype="&xsd;integer">9900</exv:postalCode>
+    <exv:represents rdf:resource="&exv;Person" />
+    <exv:street rdf:datatype="&xsd;string">Adolf-Pichler-Platz</exv:street>
+    <exv:streetNo rdf:datatype="&xsd;integer">3</exv:streetNo>
+  </exv:PhoneBookEntry>
+  <exv:PhoneBookEntry rdf:about="&exi;person9">
+    <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
+    <exv:email rdf:datatype="&xsd;string">d.liver@gmail.at</exv:email>
+    <exv:firstName rdf:datatype="&xsd;string">D.</exv:firstName>
+    <exv:lastName rdf:datatype="&xsd;string">Liver</exv:lastName>
+    <exv:phoneNo rdf:datatype="&xsd;string">+43 660 567132</exv:phoneNo>
+    <exv:postalCode rdf:datatype="&xsd;integer">6991</exv:postalCode>
+    <exv:represents rdf:resource="&exv;Person" />
+    <exv:street rdf:datatype="&xsd;string">Weinberggasse</exv:street>
+    <exv:streetNo rdf:datatype="&xsd;integer">17</exv:streetNo>
+  </exv:PhoneBookEntry>
+  <owl:Class rdf:about="&exv;Person">
+    <rdf:type rdf:resource="&owl;Class" />
+  </owl:Class>
+  <owl:Class rdf:about="&exv;PhoneBookEntry">
+    <exv:Represents rdf:resource="&exv;Person" />
+  </owl:Class>
+  <owl:Property rdf:about="&exv;Represents">
+    <rdfs:domain rdf:resource="&exv;PhoneBookEntry" />
+    <rdfs:range rdf:resource="&exv;Person" />
+  </owl:Property>
+  <owl:Property rdf:about="&exv;country">
+    <rdfs:domain rdf:resource="&exv;PhoneBookEntry" />
+    <rdfs:range rdf:resource="&xsd;string" />
+  </owl:Property>
+  <owl:Property rdf:about="&exv;email">
+    <rdfs:domain rdf:resource="&exv;PhoneBookEntry" />
+    <rdfs:range rdf:resource="&xsd;string" />
+  </owl:Property>
+  <owl:Property rdf:about="&exv;firstName">
+    <rdfs:domain rdf:resource="&exv;PhoneBookEntry" />
+    <rdfs:range rdf:resource="&xsd;string" />
+  </owl:Property>
+  <owl:Property rdf:about="&exv;lastName">
+    <rdfs:domain rdf:resource="&exv;PhoneBookEntry" />
+    <rdfs:range rdf:resource="&xsd;string" />
+  </owl:Property>
+  <owl:Property rdf:about="&exv;phoneNo">
+    <rdfs:domain rdf:resource="&exv;PhoneBookEntry" />
+    <rdfs:range rdf:resource="&xsd;string" />
+  </owl:Property>
+  <owl:Property rdf:about="&exv;postalCode">
+    <rdfs:domain rdf:resource="&exv;PhoneBookEntry" />
+    <rdfs:range rdf:resource="&xsd;int" />
+  </owl:Property>
+  <owl:Property rdf:about="&exv;street">
+    <rdfs:domain rdf:resource="&exv;PhoneBookEntry" />
+    <rdfs:range rdf:resource="&xsd;string" />
+  </owl:Property>
+  <owl:Property rdf:about="&exv;streetNo">
+    <rdfs:domain rdf:resource="&exv;PhoneBookEntry" />
+    <rdfs:range rdf:resource="&xsd;int" />
+  </owl:Property>
+</rdf:RDF>
