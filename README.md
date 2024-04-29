@@ -1,4 +1,5 @@
-# IIS_project1 - Person Phone Book with RDF (Mini-Herold - Person Edition)
+# IIS_project1 - Person Phone Book with RDF
+# (Mini-Herold - Person Edition)
 This project is created in the course of the LVA Integrated Information Systems (exersice 1).
 This project was created with visual studio and the nuget dotNetRDF. The application is run on IIS-Express and provides a small UI where phone book entries, representing persons, can be queried by providing either/and first name, last name, email, postal code, street name and/or street number. 
 
