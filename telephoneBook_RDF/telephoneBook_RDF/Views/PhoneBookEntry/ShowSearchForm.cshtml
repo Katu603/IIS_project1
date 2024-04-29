@@ -1,7 +1,4 @@
-﻿@model List<PhoneBookEntryModel>
-@{
-    var noResult = "Sorry, no result for your query was found";
-}
+﻿@model List<PersonPhoneBookEntry>
 
 <h3>Search for a Phone Book Entry</h3>
 <hr />
@@ -57,7 +54,7 @@
                 <th>Street</th>
                 <th>Street Number</th>
             </tr>
-            @foreach (PhoneBookEntryModel phoneBookEntry in Model)
+            @foreach (PersonPhoneBookEntry phoneBookEntry in Model)
             {
                 <tr>
                     <td>@phoneBookEntry.FirstName</td>

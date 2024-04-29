@@ -69,7 +69,7 @@ namespace telephoneBook_RDF.Data
             g.NamespaceMap.AddNamespace("exv", UriFactory.Create("http://example.org/vocabulary/"));
             g.NamespaceMap.AddNamespace("exi", UriFactory.Create("http://example.org/instances/"));
 
-            IUriNode PhoneBookEntry = g.CreateUriNode("exv:PhoneBookEntry");
+            IUriNode PersonPhoneBookEntry = g.CreateUriNode("exv:PersonPhoneBookEntry");
             IUriNode represents = g.CreateUriNode("exv:Represents");
             IUriNode Person = g.CreateUriNode("exv:Person");
             IUriNode a = g.CreateUriNode("rdf:type");
@@ -90,36 +90,36 @@ namespace telephoneBook_RDF.Data
             IUriNode phoneNo = g.CreateUriNode("exv:phoneNo");
 
 
-            g.Assert(new Triple(PhoneBookEntry, a, owlClass));
-            g.Assert(new Triple(PhoneBookEntry, represents, Person));
+            g.Assert(new Triple(PersonPhoneBookEntry, a, owlClass));
+            g.Assert(new Triple(PersonPhoneBookEntry, represents, Person));
             g.Assert(new Triple(represents, a, owlProperty));
-            g.Assert(new Triple(represents, domain, PhoneBookEntry));
+            g.Assert(new Triple(represents, domain, PersonPhoneBookEntry));
             g.Assert(new Triple(represents, range, Person));
             g.Assert(new Triple(Person, a, owlClass));
 
             g.Assert(new Triple(firstName, a, owlProperty));
-            g.Assert(new Triple(firstName, domain, PhoneBookEntry));
+            g.Assert(new Triple(firstName, domain, PersonPhoneBookEntry));
             g.Assert(new Triple(firstName, range, stringType));
             g.Assert(new Triple(lastName, a, owlProperty));
-            g.Assert(new Triple(lastName, domain, PhoneBookEntry));
+            g.Assert(new Triple(lastName, domain, PersonPhoneBookEntry));
             g.Assert(new Triple(lastName, range, stringType));
             g.Assert(new Triple(country, a, owlProperty));
-            g.Assert(new Triple(country, domain, PhoneBookEntry));
+            g.Assert(new Triple(country, domain, PersonPhoneBookEntry));
             g.Assert(new Triple(country, range, stringType));
             g.Assert(new Triple(postalCode, a, owlProperty));
-            g.Assert(new Triple(postalCode, domain, PhoneBookEntry));
+            g.Assert(new Triple(postalCode, domain, PersonPhoneBookEntry));
             g.Assert(new Triple(postalCode, range, intType));
             g.Assert(new Triple(street, a, owlProperty));
-            g.Assert(new Triple(street, domain, PhoneBookEntry));
+            g.Assert(new Triple(street, domain, PersonPhoneBookEntry));
             g.Assert(new Triple(street, range, stringType));
             g.Assert(new Triple(streetNo, a, owlProperty));
-            g.Assert(new Triple(streetNo, domain, PhoneBookEntry));
+            g.Assert(new Triple(streetNo, domain, PersonPhoneBookEntry));
             g.Assert(new Triple(streetNo, range, intType));
             g.Assert(new Triple(email, a, owlProperty));
-            g.Assert(new Triple(email, domain, PhoneBookEntry));
+            g.Assert(new Triple(email, domain, PersonPhoneBookEntry));
             g.Assert(new Triple(email, range, stringType));
             g.Assert(new Triple(phoneNo, a, owlProperty));
-            g.Assert(new Triple(phoneNo, domain, PhoneBookEntry));
+            g.Assert(new Triple(phoneNo, domain, PersonPhoneBookEntry));
             g.Assert(new Triple(phoneNo, range, stringType));
 
             addIndividual("Ernst", "Haft", "Austria", 4040, "Mengerstraße", 8, "+43 664 134684", "ernst.haft@gmail.at");
@@ -155,7 +155,7 @@ namespace telephoneBook_RDF.Data
         {
             IUriNode entryIndividual = g.CreateUriNode("exi:person" + currentFreeId);
             currentFreeId++;
-            IUriNode PhoneBookEntry = g.CreateUriNode("exv:PhoneBookEntry");
+            IUriNode PersonPhoneBookEntry = g.CreateUriNode("exv:PersonPhoneBookEntry");
             IUriNode Person = g.CreateUriNode("exv:Person");
             IUriNode a = g.CreateUriNode("rdf:type");
             IUriNode represents = g.CreateUriNode("exv:represents");
@@ -168,7 +168,7 @@ namespace telephoneBook_RDF.Data
             IUriNode email = g.CreateUriNode("exv:email");
             IUriNode phoneNo = g.CreateUriNode("exv:phoneNo");
 
-            g.Assert(new Triple(entryIndividual, a, PhoneBookEntry));
+            g.Assert(new Triple(entryIndividual, a, PersonPhoneBookEntry));
             g.Assert(new Triple(entryIndividual, represents, Person));
             g.Assert(new Triple(entryIndividual, firstName, g.CreateLiteralNode(firstNameVal)));
             g.Assert(new Triple(entryIndividual, lastName, g.CreateLiteralNode(lastNameVal)));
@@ -180,23 +180,23 @@ namespace telephoneBook_RDF.Data
             g.Assert(new Triple(entryIndividual, phoneNo, g.CreateLiteralNode(phoneNoVal)));
         }
 
-        public List<PhoneBookEntryModel> getEntries()
+        public List<PersonPhoneBookEntry> getEntries()
         {
             //First we need an instance of the SparqlQueryParser
             SparqlQueryParser parser = new SparqlQueryParser();
 
             //Then we can parse a SPARQL string into a query
             string prefixes = "PREFIX exv:<http://example.org/vocabulary/> PREFIX exi:<http://example.org/instances/> PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#> PREFIX xsd:<http://www.w3.org/2001/XMLSchema#> PREFIX owl:<http://www.w3.org/2002/07/owl#>";
-            SparqlQuery q = parser.ParseFromString(prefixes + " SELECT ?PhoneBookEntry ?firstName ?lastName ?email ?phoneNo ?country ?postalCode ?street ?streetNo WHERE { ?PhoneBookEntry rdf:type exv:PhoneBookEntry. ?PhoneBookEntry exv:firstName ?firstName. ?PhoneBookEntry exv:lastName ?lastName. ?PhoneBookEntry exv:phoneNo ?phoneNo. ?PhoneBookEntry exv:email ?email. ?PhoneBookEntry exv:country ?country. ?PhoneBookEntry exv:postalCode ?postalCode. ?PhoneBookEntry exv:street ?street. ?PhoneBookEntry exv:streetNo ?streetNo.}");
+            SparqlQuery q = parser.ParseFromString(prefixes + " SELECT ?PersonPhoneBookEntry ?firstName ?lastName ?email ?phoneNo ?country ?postalCode ?street ?streetNo WHERE { ?PersonPhoneBookEntry rdf:type exv:PersonPhoneBookEntry. ?PersonPhoneBookEntry exv:firstName ?firstName. ?PersonPhoneBookEntry exv:lastName ?lastName. ?PersonPhoneBookEntry exv:phoneNo ?phoneNo. ?PersonPhoneBookEntry exv:email ?email. ?PersonPhoneBookEntry exv:country ?country. ?PersonPhoneBookEntry exv:postalCode ?postalCode. ?PersonPhoneBookEntry exv:street ?street. ?PersonPhoneBookEntry exv:streetNo ?streetNo.}");
             ISparqlDataset ds = new InMemoryDataset(g);
             LeviathanQueryProcessor processor = new LeviathanQueryProcessor(ds);
             Object results = processor.ProcessQuery(q);
 
             //Turn result into List of Row-Dictionaries
-            List<PhoneBookEntryModel> resultRows = new List<PhoneBookEntryModel>();
+            List<PersonPhoneBookEntry> resultRows = new List<PersonPhoneBookEntry>();
             foreach (SparqlResult result in (SparqlResultSet)results)
             {
-                PhoneBookEntryModel resultModel = new PhoneBookEntryModel();
+                PersonPhoneBookEntry resultModel = new PersonPhoneBookEntry();
                 resultModel.FirstName = getValueOfINode(result["firstName"]);
                 resultModel.LastName = getValueOfINode(result["lastName"]);
                 resultModel.EmailAdress = getValueOfINode(result["email"]);
@@ -240,7 +240,7 @@ namespace telephoneBook_RDF.Data
             return text;
         }
 
-        public List<PhoneBookEntryModel> getEntriesBy(string SearchFirstName, string SearchLastName, string SearchEmailAddress, string SearchPostalCode, string SearchStreetName, string SearchStreetNumber)
+        public List<PersonPhoneBookEntry> getEntriesBy(string SearchFirstName, string SearchLastName, string SearchEmailAddress, string SearchPostalCode, string SearchStreetName, string SearchStreetNumber)
         {
             //First we need an instance of the SparqlQueryParser
             SparqlQueryParser parser = new SparqlQueryParser();
@@ -249,63 +249,63 @@ namespace telephoneBook_RDF.Data
             string prefixes = "PREFIX exv:<http://example.org/vocabulary/> PREFIX exi:<http://example.org/instances/> PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#> PREFIX xsd:<http://www.w3.org/2001/XMLSchema#> PREFIX owl:<http://www.w3.org/2002/07/owl#>";
             string stringtype = "\"^^xsd:string.";
             string inttype = "\"^^xsd:integer.";
-            string querySelect = prefixes + "SELECT ?PhoneBookEntry ?firstName ?lastName ?email ?phoneNo ?country ?postalCode ?street ?streetNo ";
-            string queryWhere = " WHERE { ?PhoneBookEntry rdf:type exv:PhoneBookEntry.";
+            string querySelect = prefixes + "SELECT ?PersonPhoneBookEntry ?firstName ?lastName ?email ?phoneNo ?country ?postalCode ?street ?streetNo ";
+            string queryWhere = " WHERE { ?PersonPhoneBookEntry rdf:type exv:PersonPhoneBookEntry.";
 
-            queryWhere += " ?PhoneBookEntry exv:firstName ?firstName.";
+            queryWhere += " ?PersonPhoneBookEntry exv:firstName ?firstName.";
             if (SearchFirstName != null)
             {
-                queryWhere += " ?PhoneBookEntry exv:firstName \"" + SearchFirstName + stringtype;
+                queryWhere += " ?PersonPhoneBookEntry exv:firstName \"" + SearchFirstName + stringtype;
             }
 
-            queryWhere += " ?PhoneBookEntry exv:lastName ?lastName.";
+            queryWhere += " ?PersonPhoneBookEntry exv:lastName ?lastName.";
             if (SearchLastName != null)
             {
-                queryWhere += " ?PhoneBookEntry exv:lastName \"" + SearchLastName + stringtype;
+                queryWhere += " ?PersonPhoneBookEntry exv:lastName \"" + SearchLastName + stringtype;
             }
 
-            queryWhere += " ?PhoneBookEntry exv:email ?email.";
+            queryWhere += " ?PersonPhoneBookEntry exv:email ?email.";
             if (SearchEmailAddress != null)
             {
-                queryWhere += " ?PhoneBookEntry exv:email \"" + SearchEmailAddress + stringtype;
+                queryWhere += " ?PersonPhoneBookEntry exv:email \"" + SearchEmailAddress + stringtype;
             }
 
-            queryWhere += " ?PhoneBookEntry exv:phoneNo ?phoneNo.";
+            queryWhere += " ?PersonPhoneBookEntry exv:phoneNo ?phoneNo.";
             /*if (SearchEmailAddress != null)
             {
-                queryWhere += " ?PhoneBookEntry exv:phoneNo \"" + SearchEmailAddress + stringtype;
+                queryWhere += " ?PersonPhoneBookEntry exv:phoneNo \"" + SearchEmailAddress + stringtype;
             }*/
-            queryWhere += " ?PhoneBookEntry exv:country ?country.";
+            queryWhere += " ?PersonPhoneBookEntry exv:country ?country.";
 
-            queryWhere += " ?PhoneBookEntry exv:postalCode ?postalCode.";
+            queryWhere += " ?PersonPhoneBookEntry exv:postalCode ?postalCode.";
             if (SearchPostalCode != null)
             {
-                queryWhere += " ?PhoneBookEntry exv:postalCode \"" + SearchPostalCode + inttype;
+                queryWhere += " ?PersonPhoneBookEntry exv:postalCode \"" + SearchPostalCode + inttype;
             }
             
-            queryWhere += " ?PhoneBookEntry exv:street ?street.";
+            queryWhere += " ?PersonPhoneBookEntry exv:street ?street.";
             if (SearchStreetName != null)
             {
-                queryWhere += " ?PhoneBookEntry exv:street \"" + SearchStreetName + stringtype;
+                queryWhere += " ?PersonPhoneBookEntry exv:street \"" + SearchStreetName + stringtype;
             }
             
-            queryWhere += " ?PhoneBookEntry exv:streetNo ?streetNo.";
+            queryWhere += " ?PersonPhoneBookEntry exv:streetNo ?streetNo.";
             if (SearchStreetNumber != null)
             {
-                queryWhere += " ?PhoneBookEntry exv:streetNo \"" + SearchStreetNumber + inttype;
+                queryWhere += " ?PersonPhoneBookEntry exv:streetNo \"" + SearchStreetNumber + inttype;
             }
 
             SparqlQuery q = parser.ParseFromString(querySelect + queryWhere + "}");
-            //SparqlQuery q = parser.ParseFromString(prefixes + " SELECT ?PhoneBookEntry ?firstName ?lastName ?email ?phoneNo ?country ?postalCode ?street ?streetNo WHERE { ?PhoneBookEntry rdf:type exv:PhoneBookEntry. ?PhoneBookEntry exv:lastName ?lastName. ?PhoneBookEntry exv:firstName ?firstName. ?PhoneBookEntry exv:lastName \"" + SearchLastName + stringtype + ". ?PhoneBookEntry exv:phoneNo ?phoneNo. ?PhoneBookEntry exv:email ?email. ?PhoneBookEntry exv:country ?country. ?PhoneBookEntry exv:postalCode ?postalCode. ?PhoneBookEntry exv:street ?street. ?PhoneBookEntry exv:streetNo ?streetNo.}");
+            //SparqlQuery q = parser.ParseFromString(prefixes + " SELECT ?PersonPhoneBookEntry ?firstName ?lastName ?email ?phoneNo ?country ?postalCode ?street ?streetNo WHERE { ?PersonPhoneBookEntry rdf:type exv:PersonPhoneBookEntry. ?PersonPhoneBookEntry exv:lastName ?lastName. ?PersonPhoneBookEntry exv:firstName ?firstName. ?PersonPhoneBookEntry exv:lastName \"" + SearchLastName + stringtype + ". ?PersonPhoneBookEntry exv:phoneNo ?phoneNo. ?PersonPhoneBookEntry exv:email ?email. ?PersonPhoneBookEntry exv:country ?country. ?PersonPhoneBookEntry exv:postalCode ?postalCode. ?PersonPhoneBookEntry exv:street ?street. ?PersonPhoneBookEntry exv:streetNo ?streetNo.}");
             ISparqlDataset ds = new InMemoryDataset(g);
             LeviathanQueryProcessor processor = new LeviathanQueryProcessor(ds);
             Object results = processor.ProcessQuery(q);
 
             //Turn result into List of Row-Dictionaries
-            List<PhoneBookEntryModel> resultRows = new List<PhoneBookEntryModel>();
+            List<PersonPhoneBookEntry> resultRows = new List<PersonPhoneBookEntry>();
             foreach (SparqlResult result in (SparqlResultSet)results)
             {
-                PhoneBookEntryModel resultModel = new PhoneBookEntryModel();
+                PersonPhoneBookEntry resultModel = new PersonPhoneBookEntry();
                 resultModel.FirstName = getValueOfINode(result["firstName"]);
                 resultModel.LastName = getValueOfINode(result["lastName"]);
                 resultModel.EmailAdress = getValueOfINode(result["email"]);
