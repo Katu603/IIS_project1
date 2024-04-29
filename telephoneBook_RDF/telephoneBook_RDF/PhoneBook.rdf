@@ -8,7 +8,7 @@
 	<!ENTITY exi 'http://example.org/instances/'>
 ]>
 <rdf:RDF xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:exv="http://example.org/vocabulary/" xmlns:exi="http://example.org/instances/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <exv:PhoneBookEntry rdf:about="&exi;person0">
+  <exv:PersonPhoneBookEntry rdf:about="&exi;person0">
     <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
     <exv:email rdf:datatype="&xsd;string">ernst.haft@gmail.at</exv:email>
     <exv:firstName rdf:datatype="&xsd;string">Ernst</exv:firstName>
@@ -18,8 +18,8 @@
     <exv:represents rdf:resource="&exv;Person" />
     <exv:street rdf:datatype="&xsd;string">Mengerstraße</exv:street>
     <exv:streetNo rdf:datatype="&xsd;integer">8</exv:streetNo>
-  </exv:PhoneBookEntry>
-  <exv:PhoneBookEntry rdf:about="&exi;person1">
+  </exv:PersonPhoneBookEntry>
+  <exv:PersonPhoneBookEntry rdf:about="&exi;person1">
     <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
     <exv:email rdf:datatype="&xsd;string">hella.wahnsinn@gmail.at</exv:email>
     <exv:firstName rdf:datatype="&xsd;string">Hella</exv:firstName>
@@ -29,8 +29,8 @@
     <exv:represents rdf:resource="&exv;Person" />
     <exv:street rdf:datatype="&xsd;string">Rheinstraße</exv:street>
     <exv:streetNo rdf:datatype="&xsd;integer">44</exv:streetNo>
-  </exv:PhoneBookEntry>
-  <exv:PhoneBookEntry rdf:about="&exi;person10">
+  </exv:PersonPhoneBookEntry>
+  <exv:PersonPhoneBookEntry rdf:about="&exi;person10">
     <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
     <exv:email rdf:datatype="&xsd;string">don.key@gmail.at</exv:email>
     <exv:firstName rdf:datatype="&xsd;string">Don</exv:firstName>
@@ -40,8 +40,8 @@
     <exv:represents rdf:resource="&exv;Person" />
     <exv:street rdf:datatype="&xsd;string">Burgstallgasse</exv:street>
     <exv:streetNo rdf:datatype="&xsd;integer">88</exv:streetNo>
-  </exv:PhoneBookEntry>
-  <exv:PhoneBookEntry rdf:about="&exi;person11">
+  </exv:PersonPhoneBookEntry>
+  <exv:PersonPhoneBookEntry rdf:about="&exi;person11">
     <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
     <exv:email rdf:datatype="&xsd;string">earllee.riser@gmail.at</exv:email>
     <exv:firstName rdf:datatype="&xsd;string">Earl Lee</exv:firstName>
@@ -51,8 +51,8 @@
     <exv:represents rdf:resource="&exv;Person" />
     <exv:street rdf:datatype="&xsd;string">Sandgrube</exv:street>
     <exv:streetNo rdf:datatype="&xsd;integer">13</exv:streetNo>
-  </exv:PhoneBookEntry>
-  <exv:PhoneBookEntry rdf:about="&exi;person12">
+  </exv:PersonPhoneBookEntry>
+  <exv:PersonPhoneBookEntry rdf:about="&exi;person12">
     <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
     <exv:email rdf:datatype="&xsd;string">jack.pot@gmail.at</exv:email>
     <exv:firstName rdf:datatype="&xsd;string">Jack</exv:firstName>
@@ -62,8 +62,8 @@
     <exv:represents rdf:resource="&exv;Person" />
     <exv:street rdf:datatype="&xsd;string">Bozener Gasse</exv:street>
     <exv:streetNo rdf:datatype="&xsd;integer">101</exv:streetNo>
-  </exv:PhoneBookEntry>
-  <exv:PhoneBookEntry rdf:about="&exi;person13">
+  </exv:PersonPhoneBookEntry>
+  <exv:PersonPhoneBookEntry rdf:about="&exi;person13">
     <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
     <exv:email rdf:datatype="&xsd;string">lucy.fer@gmail.at</exv:email>
     <exv:firstName rdf:datatype="&xsd;string">Lucy</exv:firstName>
@@ -73,8 +73,8 @@
     <exv:represents rdf:resource="&exv;Person" />
     <exv:street rdf:datatype="&xsd;string">Buchenweg</exv:street>
     <exv:streetNo rdf:datatype="&xsd;integer">122</exv:streetNo>
-  </exv:PhoneBookEntry>
-  <exv:PhoneBookEntry rdf:about="&exi;person14">
+  </exv:PersonPhoneBookEntry>
+  <exv:PersonPhoneBookEntry rdf:about="&exi;person14">
     <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
     <exv:email rdf:datatype="&xsd;string">fiona.schreck@gmail.at</exv:email>
     <exv:firstName rdf:datatype="&xsd;string">Fiona</exv:firstName>
@@ -84,8 +84,8 @@
     <exv:represents rdf:resource="&exv;Person" />
     <exv:street rdf:datatype="&xsd;string">Buchenweg</exv:street>
     <exv:streetNo rdf:datatype="&xsd;integer">16</exv:streetNo>
-  </exv:PhoneBookEntry>
-  <exv:PhoneBookEntry rdf:about="&exi;person15">
+  </exv:PersonPhoneBookEntry>
+  <exv:PersonPhoneBookEntry rdf:about="&exi;person15">
     <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
     <exv:email rdf:datatype="&xsd;string">al.dente@outlook.at</exv:email>
     <exv:firstName rdf:datatype="&xsd;string">Al</exv:firstName>
@@ -95,8 +95,8 @@
     <exv:represents rdf:resource="&exv;Person" />
     <exv:street rdf:datatype="&xsd;string">Am Waldrand</exv:street>
     <exv:streetNo rdf:datatype="&xsd;integer">77</exv:streetNo>
-  </exv:PhoneBookEntry>
-  <exv:PhoneBookEntry rdf:about="&exi;person16">
+  </exv:PersonPhoneBookEntry>
+  <exv:PersonPhoneBookEntry rdf:about="&exi;person16">
     <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
     <exv:email rdf:datatype="&xsd;string">anna.mixmax@gmail.at</exv:email>
     <exv:firstName rdf:datatype="&xsd;string">Anna</exv:firstName>
@@ -106,8 +106,8 @@
     <exv:represents rdf:resource="&exv;Person" />
     <exv:street rdf:datatype="&xsd;string">Am Waldweg</exv:street>
     <exv:streetNo rdf:datatype="&xsd;integer">65</exv:streetNo>
-  </exv:PhoneBookEntry>
-  <exv:PhoneBookEntry rdf:about="&exi;person17">
+  </exv:PersonPhoneBookEntry>
+  <exv:PersonPhoneBookEntry rdf:about="&exi;person17">
     <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
     <exv:email rdf:datatype="&xsd;string">marina.mixmax@gmail.at</exv:email>
     <exv:firstName rdf:datatype="&xsd;string">Marina</exv:firstName>
@@ -117,8 +117,8 @@
     <exv:represents rdf:resource="&exv;Person" />
     <exv:street rdf:datatype="&xsd;string">Unter der Eiche</exv:street>
     <exv:streetNo rdf:datatype="&xsd;integer">5</exv:streetNo>
-  </exv:PhoneBookEntry>
-  <exv:PhoneBookEntry rdf:about="&exi;person2">
+  </exv:PersonPhoneBookEntry>
+  <exv:PersonPhoneBookEntry rdf:about="&exi;person2">
     <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
     <exv:email rdf:datatype="&xsd;string">earle.bird@gmail.at</exv:email>
     <exv:firstName rdf:datatype="&xsd;string">Earl E.</exv:firstName>
@@ -128,8 +128,8 @@
     <exv:represents rdf:resource="&exv;Person" />
     <exv:street rdf:datatype="&xsd;string">Bankgasse</exv:street>
     <exv:streetNo rdf:datatype="&xsd;integer">65</exv:streetNo>
-  </exv:PhoneBookEntry>
-  <exv:PhoneBookEntry rdf:about="&exi;person3">
+  </exv:PersonPhoneBookEntry>
+  <exv:PersonPhoneBookEntry rdf:about="&exi;person3">
     <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
     <exv:email rdf:datatype="&xsd;string">al.dente@gmail.at</exv:email>
     <exv:firstName rdf:datatype="&xsd;string">Al</exv:firstName>
@@ -139,8 +139,8 @@
     <exv:represents rdf:resource="&exv;Person" />
     <exv:street rdf:datatype="&xsd;string">Alxingergasse</exv:street>
     <exv:streetNo rdf:datatype="&xsd;integer">182</exv:streetNo>
-  </exv:PhoneBookEntry>
-  <exv:PhoneBookEntry rdf:about="&exi;person4">
+  </exv:PersonPhoneBookEntry>
+  <exv:PersonPhoneBookEntry rdf:about="&exi;person4">
     <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
     <exv:email rdf:datatype="&xsd;string">anna.conda@gmail.at</exv:email>
     <exv:firstName rdf:datatype="&xsd;string">Anna</exv:firstName>
@@ -150,8 +150,8 @@
     <exv:represents rdf:resource="&exv;Person" />
     <exv:street rdf:datatype="&xsd;string">Grabengassl</exv:street>
     <exv:streetNo rdf:datatype="&xsd;integer">178</exv:streetNo>
-  </exv:PhoneBookEntry>
-  <exv:PhoneBookEntry rdf:about="&exi;person5">
+  </exv:PersonPhoneBookEntry>
+  <exv:PersonPhoneBookEntry rdf:about="&exi;person5">
     <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
     <exv:email rdf:datatype="&xsd;string">anna.conda35@gmail.at</exv:email>
     <exv:firstName rdf:datatype="&xsd;string">Anna</exv:firstName>
@@ -161,8 +161,8 @@
     <exv:represents rdf:resource="&exv;Person" />
     <exv:street rdf:datatype="&xsd;string">Grabengassl</exv:street>
     <exv:streetNo rdf:datatype="&xsd;integer">66</exv:streetNo>
-  </exv:PhoneBookEntry>
-  <exv:PhoneBookEntry rdf:about="&exi;person6">
+  </exv:PersonPhoneBookEntry>
+  <exv:PersonPhoneBookEntry rdf:about="&exi;person6">
     <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
     <exv:email rdf:datatype="&xsd;string">al.bino@gmail.at</exv:email>
     <exv:firstName rdf:datatype="&xsd;string">Al</exv:firstName>
@@ -172,8 +172,8 @@
     <exv:represents rdf:resource="&exv;Person" />
     <exv:street rdf:datatype="&xsd;string">Gartengasse</exv:street>
     <exv:streetNo rdf:datatype="&xsd;integer">12</exv:streetNo>
-  </exv:PhoneBookEntry>
-  <exv:PhoneBookEntry rdf:about="&exi;person7">
+  </exv:PersonPhoneBookEntry>
+  <exv:PersonPhoneBookEntry rdf:about="&exi;person7">
     <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
     <exv:email rdf:datatype="&xsd;string">bill.ding@gmail.at</exv:email>
     <exv:firstName rdf:datatype="&xsd;string">Bill</exv:firstName>
@@ -183,8 +183,8 @@
     <exv:represents rdf:resource="&exv;Person" />
     <exv:street rdf:datatype="&xsd;string">Trefflinggasse</exv:street>
     <exv:streetNo rdf:datatype="&xsd;integer">83</exv:streetNo>
-  </exv:PhoneBookEntry>
-  <exv:PhoneBookEntry rdf:about="&exi;person8">
+  </exv:PersonPhoneBookEntry>
+  <exv:PersonPhoneBookEntry rdf:about="&exi;person8">
     <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
     <exv:email rdf:datatype="&xsd;string">cara.vab@gmail.at</exv:email>
     <exv:firstName rdf:datatype="&xsd;string">Cara</exv:firstName>
@@ -194,8 +194,8 @@
     <exv:represents rdf:resource="&exv;Person" />
     <exv:street rdf:datatype="&xsd;string">Adolf-Pichler-Platz</exv:street>
     <exv:streetNo rdf:datatype="&xsd;integer">3</exv:streetNo>
-  </exv:PhoneBookEntry>
-  <exv:PhoneBookEntry rdf:about="&exi;person9">
+  </exv:PersonPhoneBookEntry>
+  <exv:PersonPhoneBookEntry rdf:about="&exi;person9">
     <exv:country rdf:datatype="&xsd;string">Austria</exv:country>
     <exv:email rdf:datatype="&xsd;string">d.liver@gmail.at</exv:email>
     <exv:firstName rdf:datatype="&xsd;string">D.</exv:firstName>
@@ -205,47 +205,47 @@
     <exv:represents rdf:resource="&exv;Person" />
     <exv:street rdf:datatype="&xsd;string">Weinberggasse</exv:street>
     <exv:streetNo rdf:datatype="&xsd;integer">17</exv:streetNo>
-  </exv:PhoneBookEntry>
+  </exv:PersonPhoneBookEntry>
   <owl:Class rdf:about="&exv;Person">
     <rdf:type rdf:resource="&owl;Class" />
   </owl:Class>
-  <owl:Class rdf:about="&exv;PhoneBookEntry">
+  <owl:Class rdf:about="&exv;PersonPhoneBookEntry">
     <exv:Represents rdf:resource="&exv;Person" />
   </owl:Class>
   <owl:Property rdf:about="&exv;Represents">
-    <rdfs:domain rdf:resource="&exv;PhoneBookEntry" />
+    <rdfs:domain rdf:resource="&exv;PersonPhoneBookEntry" />
     <rdfs:range rdf:resource="&exv;Person" />
   </owl:Property>
   <owl:Property rdf:about="&exv;country">
-    <rdfs:domain rdf:resource="&exv;PhoneBookEntry" />
+    <rdfs:domain rdf:resource="&exv;PersonPhoneBookEntry" />
     <rdfs:range rdf:resource="&xsd;string" />
   </owl:Property>
   <owl:Property rdf:about="&exv;email">
-    <rdfs:domain rdf:resource="&exv;PhoneBookEntry" />
+    <rdfs:domain rdf:resource="&exv;PersonPhoneBookEntry" />
     <rdfs:range rdf:resource="&xsd;string" />
   </owl:Property>
   <owl:Property rdf:about="&exv;firstName">
-    <rdfs:domain rdf:resource="&exv;PhoneBookEntry" />
+    <rdfs:domain rdf:resource="&exv;PersonPhoneBookEntry" />
     <rdfs:range rdf:resource="&xsd;string" />
   </owl:Property>
   <owl:Property rdf:about="&exv;lastName">
-    <rdfs:domain rdf:resource="&exv;PhoneBookEntry" />
+    <rdfs:domain rdf:resource="&exv;PersonPhoneBookEntry" />
     <rdfs:range rdf:resource="&xsd;string" />
   </owl:Property>
   <owl:Property rdf:about="&exv;phoneNo">
-    <rdfs:domain rdf:resource="&exv;PhoneBookEntry" />
+    <rdfs:domain rdf:resource="&exv;PersonPhoneBookEntry" />
     <rdfs:range rdf:resource="&xsd;string" />
   </owl:Property>
   <owl:Property rdf:about="&exv;postalCode">
-    <rdfs:domain rdf:resource="&exv;PhoneBookEntry" />
+    <rdfs:domain rdf:resource="&exv;PersonPhoneBookEntry" />
     <rdfs:range rdf:resource="&xsd;int" />
   </owl:Property>
   <owl:Property rdf:about="&exv;street">
-    <rdfs:domain rdf:resource="&exv;PhoneBookEntry" />
+    <rdfs:domain rdf:resource="&exv;PersonPhoneBookEntry" />
     <rdfs:range rdf:resource="&xsd;string" />
   </owl:Property>
   <owl:Property rdf:about="&exv;streetNo">
-    <rdfs:domain rdf:resource="&exv;PhoneBookEntry" />
+    <rdfs:domain rdf:resource="&exv;PersonPhoneBookEntry" />
     <rdfs:range rdf:resource="&xsd;int" />
   </owl:Property>
 </rdf:RDF>

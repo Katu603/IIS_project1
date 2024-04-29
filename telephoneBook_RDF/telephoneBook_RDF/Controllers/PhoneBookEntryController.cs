@@ -19,7 +19,7 @@ namespace telephoneBook_RDF.Controllers
         // GET: PhoneBook/ShowSearchForm
         public IActionResult ShowSearchForm()
         {
-            return View("ShowSearchForm", new List<PhoneBookEntryModel> { new PhoneBookEntryModel()});
+            return View("ShowSearchForm", new List<PersonPhoneBookEntry> { new PersonPhoneBookEntry()});
         }
 
         // GET: PhoneBook/ShowSearchResults
